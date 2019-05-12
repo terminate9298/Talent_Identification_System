@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Resume of Kaustubh Pathak as Wed Developer and Graphic Designer with past Hands on experience of developement">
+    <meta name="keywords" content=" resume, website, kaustubh, pathak, web, developer, designer, kaustubh pathak, Kaustubh Pathak, kaus, kauspathak , designer,developer,freelencer,abv-iiitm,iiitm,gwalior,etawah,php,graphic ">
+    <meta name="author" content="Kaustubh Pathak">
+    <meta name="msvalidate.01" content="7D37352336991B9C4949AD5D1DC99E98" />
+
+    <title>Kaustubh Resume</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/jpg" href="img/photo-2.jpg" />
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/calendar.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.classysocial.min.css" />
+    <link href="css/resume.min.css" rel="stylesheet">
+    <script>
+      //made by vipul mirajkar thevipulm.appspot.com
+var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 1;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #bd5d38;}";
+        document.body.appendChild(css);
+    };
+  
+    </script>
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none"><span><img style="filter: brightness(110%) saturate(110%);max-width: 51px;vertical-align: middle;" class="img-fluid  rounded-circle mx-auto mb-2" src="img/profile3.jpeg" alt=""></span><!-- <span style="font-size:3rem;">KAUSTUBH PATHAK</span> --></span>
+        <span class="d-none d-lg-block">
+          <img style="filter:  brightness(110%) saturate(110%);" class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile3.jpeg" alt="kaustubh">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#awards">Contact Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="final_resume.pdf" download="">Resume</a>
+          </li>
+        
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column " id="about">
+        <!-- flex-direction-reverse
+        <div class="hide-mobile">
+          <div class="bandClock"></div>
+          
+        <div style="margin-top: 40px;" class="slideshow">
+          <div>
+            <img src="img/photo-1.jpg" width="100%" alt="Kaustubh">
+          </div> 
+          <div>
+            <img src="img/photo-2.jpg" width="100%" alt="Pahtak">
+          </div> 
+          <div>
+            <img src="img/photo-3.jpg" width="100%" alt="Kaustubh">
+          </div> 
+          <div>
+            <img src="img/photo-4.jpg" width="100%" alt="Kaustubh">
+          </div>
+          <div>
+            <img src="img/photo-5.jpg" width="100%" alt="Kaustubh">
+          </div> 
+          <div>
+            <img src="img/photo-6.jpg" width="100%" alt="Kaustubh">
+          </div> 
+          <div>
+            <img src="img/photo-7.jpg"  width="100%" alt="Kaustubh">
+          </div>  
+          </div>
+          <div>
+            <div class=" text-sm-center  " style="margin-top: -25px;">
+              <a href="final_resume.pdf" class=" btn btn-danger" style="background-color: #bd5d38;border-color: #bd5d38; " download="">
+                Download My CV
+              </a>
+          </div>
+          </div>
+        </div> -->
+        <div class="my-auto">
+          <h1 class="mb-0" >Kaustubh
+            <span class="text-primary auto-typing-2">Pathak</span>
+          </h1>
+          <div class="subheading mb-3">Room No. - 335  , BH-1 ABV - IIITM· GWALIOR 474003 ,  Phone No. 914904-2316 ·
+             <a href="mailto:kaus.pathak@email.com">kaus.pathak@gmail.com</a>
+          </div>
+          <p class="mb-5 kaus-edit-padding-right">Machine Learning Enthusiastic , Full Stack Web Develeoper  and Designer
+           <!--Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.--></p>
+                       <h2 href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Kaustubh Pathak.", "I Love To Code.", "I Love to Develop.", "I Love to Design."]' style="color: #bd5d38;margin-bottom: 1em;">
+                           <span class="wrap"></span>
+                        </h2>
+            <div>
+            <div class=" text-sm  " style="margin-top: -25px;">
+              <a href="Resume.pdf" class=" btn btn-danger" style="background-color: #bd5d38;border-color: #bd5d38; " download="">
+                Download My CV
+              </a>
+          </div>
+          <!-- <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/kaustubh.pathak.714">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/kaus98/">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com/kauspathak11">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/kaustubh-pathak-12126314a/">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/kaustubh9298">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.flickr.com/photos/160203994@N07/">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+
+          </ul> -->
+          
+        </div>
+      </section>
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+    
+<!-- <iframe id="modal-replace " src="http://salindia.in/kaus/"></iframe> -->
+    <!-- Modal content-->
+    <div class="modal-content">
+      <iframe id="modal-replace" style="min-height: 600px;"></iframe>
+    </div>
+  </div>
+</div>
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-5">
+            Interns
+          </h2>
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Web Design Intern At Shaastra Automations</h3>
+              <a class="subheading mb-3 " href="http://salindia.in/kaus">https://salindia.in/kaus/</a>
+              <p>During Inern , I designed  the  Front and Back end of website with various menu options and selection of various products and hosted on Server on AWS(Hosting and RDS) and DigitalOcean. </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <h3> Web Developer</h3>
+              <span class="text-primary">July 2018 - Sep 2018</span>
+            </div>
+          </div>
+        </div>
+        <div class="my-auto">
+          <h2 class="mb-5">Projetcs</h2>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><b>Kaggle Competitons</b></h3>
+              <a class="subheading mb-3 " href="https://kaggle.com/terminate9298">kaggle.com/terminate9298</a>
+              <p>Presently working on Kaggle and solved Multiple Competitions Including : 
+                <ul>
+                  <li>Airbnb New User Bookings <a href="https://kaggle.com/terminate9298"> <img src="https://img.icons8.com/material/15/bd5d38/external-link.png" style="margin-left: 5px;"> </a></li>
+                  <li>Pokemon - Weedle's Cave <a href="https://kaggle.com/terminate9298"> <img src="https://img.icons8.com/material/15/bd5d38/external-link.png" style="margin-left: 5px;"> </a></li>
+                  <li>Digit Recognizer<a href="https://kaggle.com/terminate9298"> <img src="https://img.icons8.com/material/15/bd5d38/external-link.png" style="margin-left: 5px;"> </a></li>
+                  <li>Titanic: Machine Learning from Disaster<a href="https://kaggle.com/terminate9298"> <img src="https://img.icons8.com/material/15/bd5d38/external-link.png" style="margin-left: 5px;"> </a></li>
+                  <li>Bag of Words Meets Bags of Popcorn <a href="https://kaggle.com/terminate9298"> <img src="https://img.icons8.com/material/15/bd5d38/external-link.png" style="margin-left: 5px;"> </a></li>
+                </ul>
+              </p>
+            </div>
+            
+            <div class="resume-date text-md-right">
+              <h3> Machine Learning</h3>
+              <span class="text-primary">Presently Working</span>
+            </div>
+          </div>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><b>OpenCV Projects</b></h3>
+              <a class="subheading mb-3 " href="https://github.com/terminate9298/OpenCV-Projects">terminate9298/OpenCV-Projects</a>
+              <p>Worked on Multiple OpenCV Projects which includes :
+                <ul>
+                  <li>Edge Detections <a href="https://github.com/terminate9298/OpenCV-Projects"> <img src="https://img.icons8.com/material/15/bd5d38/external-link.png" style="margin-left: 5px;"> </a></li>
+                  <li>Face and Eye Detection With Haar Cascade <a href="https://github.com/terminate9298/OpenCV-Projects"> <img src="https://img.icons8.com/material/15/bd5d38/external-link.png" style="margin-left: 5px;"> </a></li>
+                  <li>Different Kind of Filters in Videos <a href="https://github.com/terminate9298/OpenCV-Projects"> <img src="https://img.icons8.com/material/15/bd5d38/external-link.png" style="margin-left: 5px;"> </a></li>
+                </ul>
+              </p>
+            </div>
+            
+            <div class="resume-date text-md-right">
+              <h3>Computer Vision</h3>
+              <span class="text-primary">Presently Working</span>
+            </div>
+          </div>
+          
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><b>Talent Identification Program </b> By Gravit Infotech</h3>
+              <a class="subheading mb-3" href="https://github.com/terminate9298/Talent_Identification_System">Talent Identification System</a>
+              <p>Admin Panel and user Interface Website built over PHP and Codeigniter to maintain records of multiple schools/ institutions and evaluate / process the desired result .  </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <h3> Web Developer</h3>
+              <span class="text-primary">Oct 2018 - Nov 2018</span>
+            </div>
+          </div>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><b>Confession Site</b></h3>
+              <a class="subheading mb-3" href="https://github.com/terminate9298/Confession_site">IIITM Confession</a>
+              <p>Confession Site which take the confession and allow user to post in igcognito Mode and Comment on Confession with each confession can be divided into multiple categories.  </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <h3> Web Developer</h3>
+              <span class="text-primary">Dec 2018 - Jan 2019</span>
+            </div>
+          </div>
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><b>TIIC</b>(Technology Innovation & Incubation Center)<b> Project</b></h3>
+              <a class="subheading mb-3" href="http://tiiciiitm.com">http://tiiciiitm.com/</a>
+              <p>College project for TIIC which is Innovation Club of ABV - IIITM Gwalior . Project include designing the Multi paged web page having working backend with help Bootstrap and Jquery.  </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <h3> Web Designer</h3>
+              <span class="text-primary">Sep 2018 - Oct 2018</span>
+            </div>
+          </div>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><b>Notemaker</b></h3>
+              <a class="subheading mb-3" href="https://notemaker.000webhostapp.com">notemaker.000webhostapp.com</a>
+              <p>Solve the problem of properly managing your ideas anywhere by writing at proper place.This is my First Individual project with help of Technology like Ajax and Jquery.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <h3> Individual Project</h3>
+              <span class="text-primary">Apr 2018 - July 2018</span>
+            </div>
+          </div>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><b>TODO List Maker</b></h3>
+              <a class="subheading mb-3"  href="https://kaus.ap-south-1.elasticbeanstalk.com/project/">kaus.ap-south-1.elasticbeanstalk.com/project/</a>
+                <p>Currently working on AWS Hosting Technology by BeanStack and RDS by hosting PHP and MySQL project made with CodeIgnitor.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <h3>AWS Project</h3>
+              <span class="text-primary">Nov 2018 - Dec 2018</span>
+            </div>
+          </div>
+          <!-- <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><b>Gravit infosystems</b></h3>
+                <p>Designed seperate Admin and User  panel for collecting and Displaying the user information from various sources. </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <h3>BackEnd Developer</h3>
+              <span class="text-primary">Sep 2018 - Oct 2018</span>
+            </div>
+          </div> -->
+          
+           
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><b>Infotsav '19</b>(Technical Fest of GWALIOR)</h3>
+             <a class="subheading mb-3" href="https://github.com/terminate9298/TroveTrace">TroveTrace</a>
+                <p>Designed Various Web Pages and Quizzes for online games in Infotsav which includes online rating and grading  system. </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <h3>Web Designer & Developer</h3>
+              <span class="text-primary">Sep 2018 - Present</span>
+            </div>
+          </div> 
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><b>E-Cell</b>(Entrepreneur cell of abv-iiitm Gwalior)</h3>
+             <!--  <div class="subheading mb-3">kaus.ap-south-1.elasticbeanstalk.com/project/</div> -->
+                <p>Designed front pages of main website with addition features of registring and getting reports for various events. </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <h3>Web Developer</h3>
+              <span class="text-primary">Feb 2018 - Present</span>
+            </div>
+          </div> 
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><b>Aurora</b>(Cultural Fest of abv-iiitm Gwalior)</h3>
+              <a class="subheading mb-3"href="https://www.flickr.com/photos/160203994@N07/">Check Out Posters</a>
+             <!--  <div class="subheading mb-3">kaus.ap-south-1.elasticbeanstalk.com/project/</div> -->
+                <p>Designed front pages of main website with addition features of registring and getting reports for various events. </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <h3>Graphic Designer</h3>
+              <span class="text-primary">Nov 2017 - Mar 2018  </span>
+            </div>
+          </div>   
+        </div>
+
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Education</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">ABV - Indian Institute of Information Technology and Management , Gwalior <a href="https://www.iiitm.ac.in/index.php/en/"> <img src="https://img.icons8.com/material/28/bd5d38/external-link.png" style="margin-left: 5px;"> </a> </h3>
+              <div class="subheading mb-3">Integrated B.tect & M.tech , Information Technology</div>
+              <p>Currently maintaining the degree with 80.50% .</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">2017 - 2022</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">St. Mary's Inter College, Etawah<a href="http://www.stmarysetawah.in/"> <img src="https://img.icons8.com/material/28/bd5d38/external-link.png" style="margin-left: 5px;"> </a> </h3>
+              <div class="subheading mb-3">XII (Intermediate)</div>
+              <p>Scored 88.70% from CBSE Board. </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">2016</span>
+            </div>
+          </div>
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">St. Mary's Inter College, Etawah<a href="http://www.stmarysetawah.in/"> <img src="https://img.icons8.com/material/28/bd5d38/external-link.png" style="margin-left: 5px;"> </a> </h3>
+              <div class="subheading mb-3">X (Metriculation)</div>
+              <p>Scored the 9.6 CGPA from CBSE Board. </p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">2014</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 class="mb-5">Skills</h2>
+          <div class="subheading mb-3"><b>Technologies</b></div>
+          <ul class="fa-ul mb-4 ml-5">
+              <li>
+              <i class="fa-li fa fa-check"></i>Machine Learning</li>
+              <li>
+              <i class="fa-li fa fa-check"></i>Cloud Computing</li>
+              <li>
+              <i class="fa-li fa fa-check"></i>Full Stack Developer</li>
+
+          </ul>
+          <div class="subheading mb-3"><b>Programming Languages &amp; Tools</b></div>
+          <ul class="list-inline list-icons ml-3">
+            <li class="list-inline-item" title="Python">
+              <i class="devicons devicons-python"></i>
+            </li>
+            <li class="list-inline-item" title="Linux">
+              <i class="devicons devicons-linux"></i>
+            </li>
+            <li class="list-inline-item" title="PHP">
+              <i class="devicons devicons-php"></i>
+            </li>
+            <li class="list-inline-item" title="JavaScript">
+              <i class="devicons devicons-javascript"></i>
+            </li>
+            <li class="list-inline-item" title="HTML 5">
+              <i class="devicons devicons-html5"></i>
+            </li>
+            <li class="list-inline-item" title="CSS 3">
+              <i class="devicons devicons-css3"></i>
+            </li>
+            <li class="list-inline-item" title="Jquery">
+              <i class="devicons devicons-jquery"></i>
+            </li>
+            <li class="list-inline-item" title="SASS">
+              <i class="devicons devicons-sass"></i>
+            </li>
+            <li class="list-inline-item" title="Bootstrap">
+              <i class="devicons devicons-bootstrap"></i>
+            </li>
+            <li class="list-inline-item" title="WordPress">
+              <i class="devicons devicons-wordpress"></i>
+            </li>
+            <li class="list-inline-item" title="MySQL">
+              <i class="devicons devicons-mysql"></i>
+            </li>
+            <li class="list-inline-item" title="Laravel">
+              <i class="devicons devicons-laravel"></i>
+            </li>
+            <li class="list-inline-item" title="CodeIgnitor">
+              <i class="devicons devicons-codeignitor"></i>
+            </li>
+            <li class="list-inline-item" title="Photoshop">
+              <i class="devicons devicons-photoshop"></i>
+            </li>
+            <li class="list-inline-item" title="Illustrator">
+              <i class="devicons devicons-illustrator"></i>
+            </li>
+            <li class="list-inline-item" title="NPM">
+              <i class="devicons devicons-npm"></i>
+            </li>
+            <li class="list-inline-item" title="Sublime">
+              <i class="devicons devicons-sublime"></i>
+            </li>
+            <li class="list-inline-item" title="Atom">
+              <i class="devicons devicons-atom"></i>
+            </li>
+            <li class="list-inline-item" title="NodeJS">
+              <i class="devicons devicons-nodejs"></i>
+            </li>
+            <li class="list-inline-item" title="ReactJS"> 
+              <i class="devicons devicons-react"></i>
+            </li>
+            
+            <li class="list-inline-item" title="Terminal">
+              <i class="devicons devicons-terminal"></i>
+            </li>
+            <li class="list-inline-item" title="AWS">
+              <i class="devicons devicons-aws"></i>
+            </li>
+            <li class="list-inline-item" title="Cloud9">
+              <i class="devicons devicons-cloud9"></i>
+            </li>
+          </ul>
+
+          <div class="subheading mb-3"><b>Workflow</b></div>
+          <ul class="fa-ul mb-0 ml-5">
+              <li>
+              <i class="fa-li fa fa-check"></i>
+              Hosted Websites on AWS Cloud Platform and Integrated Database with RDS. </li>
+              <li>
+              <li>
+              <i class="fa-li fa fa-check"></i>
+              Worked with Laravel and CodeIgnitor</li>
+              <li>
+              <i class="fa-li fa fa-check"></i>
+              Worked with Various Admin Theme.</li>
+              <li>
+              <i class="fa-li fa fa-check"></i>
+              BackEnd Development with PHP and Mysql.</li>
+              <li>
+              <i class="fa-li fa fa-check"></i>
+              Mobile-First, Responsive Designs</li>
+              <li>
+              <i class="fa-li fa fa-check"></i>
+              Poster &amp; Logo Designing</li>
+              <li>
+              <i class="fa-li fa fa-check"></i>
+              Photo Editing </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+        <div class="my-auto">
+          <h2 class="mb-5">Interests</h2>
+          <p>Apart from being a Machine Learning Enthusiastic and  Web Developer, I enjoy most of my time being outdoors. I like doing taking photos and editing them. I love music because i don't know know what else i would have done, because I love music too much. </p>
+          <p class="mb-0">When forced indoors, I follow a number of games and television shows, and I spend a large amount of my free time exploring the latest technolgy advancements in  Machine Learning World</p>
+        </div>
+      </section>
+<!--
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+        <div class="my-auto">
+          <h2 class="mb-5">Awards &amp; Certifications</h2>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              Google Analytics Certified Developer</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              Mobile Web Specialist - Google Certification</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              1<sup>st</sup>
+              Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              1<sup>st</sup>
+              Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              2<sup>nd</sup>
+              Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
+            <li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              1<sup>st</sup>
+              Place - James Buchanan High School - Hackathon 2006</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              3<sup>rd</sup>
+              Place - James Buchanan High School - Hackathon 2005</li>
+          </ul>
+        </div>
+      </section>
+-->
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+        <div class="my-auto">
+          <h2 class="mb-5">Contact Me (MayBe)</h2>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-angle-double-right text-warning "></i>
+              <span class="ml-3">Kaustubh Pathak</span></li>
+            <li>
+              <i class="fa-li fa fa-phone text-warning"></i>
+              <span class="ml-3">(914) 90-42316 , (956) 04-06097</span></li>
+            
+                 <!-- <li>
+              <i class="fa-li fa fa-phone text-warning"></i>
+              <span class="ml-3">(956) 04-06097</span></li> -->
+              <li>
+              <i class="fa-li fa  fa-at text-warning"></i>
+              <span class="ml-3">E-Mail - <a href="#">kaus.pathak@gmail.com</a></span></li>
+              <li>
+              <i class="fa-li fa  fa-paint-brush  text-warning"></i>
+              <span class="ml-3">Hobbies - Listening Music , Photography ,Web surfing , Designing.</span></li>
+              <li>
+              <i class="fa-li fa fa-map-pin text-warning "></i>
+              <span class="ml-3">Present Address - Room No. - 335, BH-1 Atal Bihari Vajpayee - Indian Institute of Information Technology &amp; Management,  Gwalior -  474003</span></li>
+              <li>
+              <i class="fa-li fa fa-address-card text-warning "></i>
+              <span class="ml-3">Parmanent Address - 29 Pansari Tola , Etawah - 206001</span></li>
+            
+          </ul>
+          </div>
+          <!--
+        <form action="#" method="post">
+          
+            <div class="container" style="margin-top: 5em;">
+              <h3 style="color : #bd5d38;">
+                Message Me(Coming Soon)
+              </h3>
+              <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control"  placeholder="Name" required />
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" name="email" class="form-control"  placeholder="E-Mail" required/>
+
+              </div>
+                <div class="form-group col-md-12">
+                <textarea class="form-control"  rows="10" placeholder="Message" required></textarea>
+                
+              </div>
+              
+               <button type="submit" class="btn btn-kaus">Submit</button>
+                
+              
+              </div>
+          </div>
+        </form>
+        -->
+    `   <div style="min-height: 75px;text-align:center;" >Please Comment .It helps more than you think. <br><br>
+        <div id="disqus_thread"></div>
+        </section>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = 'http://terminare9298.github.io';  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = '123' // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-terminate9298-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+        </div>
+           <!--  <form method="post" action="#">
+            <div class="row">
+              <div class="6u 12u(mobilep)">
+                <input type="text" name="name" placeholder="Name" />
+              </div>
+              <div class="6u 12u(mobilep)">
+                <input type="email" name="email" placeholder="Email" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="12u">
+                <input type="phone" name="phone" placeholder="Phone No." />
+              </div>
+            </div>
+            <div class="row">
+              <div class="12u">
+                <textarea name="message" placeholder="Message" rows="6"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="12u">
+                <ul class="actions">
+                  <input type="submit" value="Send Message" />
+                </ul>
+              </div>
+            </div>
+          </form> -->
+      </section>
+<div class="classysocial"
+    data-arc-length="90"
+    data-image-type="default"
+    data-picture="images/share_core_square1.jpg"
+    data-facebook-handle="kaustubh.pathak.714"
+    data-github-handle="terminate9298"
+    data-twitter-handle="kauspathak11"
+    data-linkedin-handle="kaustubh-pathak-12126314a"
+    data-instagram-handle="kaus98"
+    data-flickr-handle="160203994@N07"
+    data-kaggle-handle='terminate9298'
+    data-orientation="line"
+    data-radius="180"
+    data-arc-start="270"
+    data-networks="facebook,twitter,github,linkedin,instagram,flickr,kaggle" style="position:fixed;right: 10px;bottom: 10px;"></div>
+    </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/bandClock.min.js"></script>
+    <script src="js/jquery.classysocial.min.js"></script>
+    <script>
+       $(document).ready(function() {
+        $('.bandClock').bandClock({
+    // clock size
+    size: 150,
+    // colock color
+    color: '#bd5d38',
+    // background color
+    bgColor: '#fff',
+    // band options
+    lineWidth: 3,
+    lineCap: 'round',
+    // space between bands
+    gap:5,
+    // font style
+   // fontStyle: '14px Verdana'
+    fontStyle: '20px Saira Extra Condensed '
+  });
+   $(".slideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('.slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('.slideshow');
+}, 3000);
+$(".classysocial").ClassySocial();
+$('.click_function').click(function(e){
+    e.preventDefault();
+      var page_url = $(this).attr('href');
+      console.log(page_url);
+     // $('#modal-replace').load(page_url);
+      $("#modal-replace").attr("src",page_url);
+  })
+       });
+
+
+    </script> 
+
+  </body>
+
+</html>

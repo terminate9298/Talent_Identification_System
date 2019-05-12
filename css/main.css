@@ -1,0 +1,80 @@
+.form-control::placeholder{
+	color: #bd5d389f !important;
+}
+
+.form-control{
+	padding:.8em !important;
+	border: 1px solid #bd5d38;
+	color: #bd5d38df !important;
+}
+.form-control:focus{
+	box-shadow: 0 0 0 .1rem #bd5d38 !important;
+	border-color: #bd5d38 !important;
+	border-radius: 0px;
+}
+.btn-kaus{
+	background-color: #bd5d38;
+	color: #eee;
+	float: right;
+}
+
+@media  (max-device-width: 920px) {
+      .show-mobile {
+        display: block;
+      }
+      .hide-mobile {
+        display: none;
+      }
+    }
+
+ @media  (min-device-width: 921px) {
+      .show-mobile {
+        display: none;
+      }
+      .hide-mobile {
+        display: block;
+      }
+    }
+@media (min-device-width: 920px) {
+	.flex-direction-reverse{
+	flex-direction: row-reverse;
+		}
+    }
+@media (max-device-width: 919px) {
+	.flex-direction-reverse{
+	flex-direction: row;
+		}
+    }
+    
+    
+.slideshow {
+  margin: 80px auto;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  background-color: #eee;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  
+}
+
+.slideshow > div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  overflow: hidden;
+  transition: filter 1s;
+}
+.slideshow > div :hover{
+  filter: sepia(100%);
+}
+
+@media only screen and (min-device-width: 920px) {
+      .kaus-edit-padding-right{
+        padding-right: 60px;
+      }
+    }
+
+
